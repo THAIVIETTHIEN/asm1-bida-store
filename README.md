@@ -1,1 +1,0 @@
-# asm1-bida-store
