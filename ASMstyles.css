@@ -1,0 +1,179 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+
+body {
+    background: #0e0e0e;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+.site-header {
+    background: #000;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #00ffd5;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav a:hover {
+    color: #00ffd5;
+}
+
+/* HERO */
+.hero {
+    background: radial-gradient(circle, #1a1a1a, #000);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: #00ffd5;
+    color: #000;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #00c9aa;
+}
+
+/* ===== SẢN PHẨM ===== */
+.products {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product {
+    background: #141414;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 15px 40px rgba(0, 255, 213, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(0, 255, 213, 0.25);
+}
+
+.product img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.product h4 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.product p {
+    color: #00ffd5;
+    font-weight: 700;
+}
+
+/* ===== TABLE DỊCH VỤ ===== */
+.service-table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background: #141414;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.service-table th,
+.service-table td {
+    padding: 15px;
+    text-align: center;
+}
+
+.service-table th {
+    background: #00ffd5;
+    color: #000;
+}
+
+.service-table tr:nth-child(even) {
+    background: #1c1c1c;
+}
+
+.service-table tr:hover {
+    background: rgba(0, 255, 213, 0.15);
+}
+
+/* FOOTER */
+.footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .nav a {
+        margin-left: 12px;
+    }
+}
